@@ -13,16 +13,17 @@ set nocompatible
 filetype off
 syntax on
 
-set rtp+=~/.vim/bundle/vundle.vim/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
 
-Bundle 'gmarik/Vundle.vim'
-Bundle 'bling/vim-airline'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-fireplace'
-Bundle 'tpope/vim-surround'
-Bundle 'L9'
-Bundle 'vim-scripts/FuzzyFinder'
+Plugin  'gmarik/Vundle.vim'
+Plugin  'bling/vim-airline'
+Plugin  'tpope/vim-fugitive'
+Plugin  'tpope/vim-fireplace'
+Plugin  'tpope/vim-surround'
+Plugin  'L9'
+Plugin  'vim-scripts/FuzzyFinder'
+call vundle#end()
 
 filetype plugin indent on
 
