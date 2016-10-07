@@ -8,10 +8,7 @@ set t_Co=256
 set background=dark
 set nowrap
 set nofoldenable
-
 set nocompatible
-filetype off
-syntax on
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
@@ -23,12 +20,17 @@ Plugin  'tpope/vim-fireplace'
 Plugin  'tpope/vim-surround'
 Plugin  'L9'
 Plugin  'vim-scripts/FuzzyFinder'
+Plugin  'guns/vim-clojure-static'
+Plugin  'pangloss/vim-javascript'
+Plugin  'mxw/vim-jsx'
 call vundle#end()
 
+syntax on
 filetype plugin indent on
 
 let g:airline_powerline_fonts = 1
 let g:bufferline_echo = 0
 let g:airline#extensions#tabline#enabled = 1
+let g:jsx_ext_required = 0
 
 :map <tab> :FufFile<CR>
