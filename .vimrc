@@ -1,7 +1,7 @@
 set bs=indent,eol,start
 set expandtab
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set number
 set laststatus=2
 set t_Co=256
