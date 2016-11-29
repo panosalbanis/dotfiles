@@ -10,6 +10,8 @@ set nowrap
 set nofoldenable
 set nocompatible
 
+autocmd BufWritePre * %s/\s\+$//e
+
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
 
@@ -23,6 +25,9 @@ Plugin  'vim-scripts/FuzzyFinder'
 Plugin  'guns/vim-clojure-static'
 Plugin  'pangloss/vim-javascript'
 Plugin  'mxw/vim-jsx'
+Plugin  'vim-scripts/Align'
+Plugin  'vim-scripts/SQLUtilities'
+
 call vundle#end()
 
 syntax on
