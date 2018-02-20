@@ -10,6 +10,8 @@ set nowrap
 set nofoldenable
 set nocompatible
 
+imap jj <Esc>
+
 autocmd BufWritePre * %s/\s\+$//e
 
 set rtp+=~/.vim/bundle/Vundle.vim/
